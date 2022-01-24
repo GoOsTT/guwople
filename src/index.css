@@ -41,3 +41,19 @@ html {
   /* height: 100vh; */
   max-height: 200px;
 }
+.gucci_holder {
+  height: auto;
+  width: 100%;
+  margin-top: 95%;
+  margin-bottom: 4%;
+}
+
+.gucci_holder img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .gucci_holder {
+    margin-top: 88%;
+  }
+}

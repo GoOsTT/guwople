@@ -1,6 +1,7 @@
 import { ReactComponent as Github } from '../data/Github.svg'
 import { ReactComponent as Close } from '../data/Close.svg'
 import Modal from 'react-modal'
+import '../index.css'
 
 Modal.setAppElement('#root')
 
@@ -15,6 +16,10 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
       </button>
       <div className="h-full flex flex-col items-center justify-center max-w-[390px] mx-auto pt-9 text-primary dark:text-primary-dark">
           <div className="flex-1 w-full sm:text-base text-sm">
+            <div className='gucci_holder'>
+            <img src='https://i.scdn.co/image/ab6761610000e5ebb9b77f64bd278ffde2c94428' alt='Gucci Mane'/>
+            </div>
+        
           <h1 className="text-center sm:text-3xl text-2xl">What is this?</h1>
           <ul className="list-disc pl-5 block sm:text-base text-sm">
             <li className="mt-6 mb-2">This is a word guessing game that selects from a lexicon composed of words from <a href="https://twitter.com/gucci1017">the trap god Gucci Mane</a>'s track names. It's built on <a href="https://twitter.com/katherinecodes">Katherine Peterson</a>'s <a href="https://octokatherine.github.io/word-master">WordMaster</a></li>
